@@ -5,12 +5,12 @@ namespace AnalyserMsTest
     [TestClass]
     public class UnitTest1
     {
-
         [TestMethod]
-        public void GiveHappyMoodReturnHappy()
+        [DataRow(null)]
+        public void GiveSadMoodReturnSad(string message)
         {
-            string expected = "Happy";
-            string message = "I am in happy mood";
+            string expected = "sad";
+            
             MoodAnalyse analyse = new MoodAnalyse(message);
 
             string mood = analyse.AnalyseMood();
@@ -18,4 +18,6 @@ namespace AnalyserMsTest
             Assert.AreEqual(expected, mood);
         }
     }
+
+
 }

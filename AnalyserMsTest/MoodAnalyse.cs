@@ -13,14 +13,22 @@ namespace AnalyserMsTest
         }
         public string AnalyseMood()
         {
-            if (this.message.Contains("sad"))
+            try
             {
-                return "Sad";
+                if (this.message.Contains("sad"))
+                {
+                    return "sad";
+                }
+                else
+                {
+                    return "Happy";
+                }
             }
-            else
+            catch
             {
-                return "Happy";
+                return "sad";
             }
+
         }
     }
 }
