@@ -11,9 +11,9 @@ namespace AnalyserMsTest
         {
             string expected = "Happy";
             string message = "I am in happy mood";
-            MoodAnalyse analyse = new MoodAnalyse();
+            MoodAnalyse analyse = new MoodAnalyse(message);
 
-            string mood = analyse.AnalyseMood(message);
+            string mood = analyse.AnalyseMood();
 
             Assert.AreEqual(expected, mood);
         }

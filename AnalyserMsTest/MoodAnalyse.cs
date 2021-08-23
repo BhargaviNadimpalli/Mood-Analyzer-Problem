@@ -7,10 +7,13 @@ namespace AnalyserMsTest
     public class MoodAnalyse
     {
         private string message;
-        
-        public string AnalyseMood(string message)
+        public MoodAnalyse(string message)
         {
-            if (message.Contains("sad"))
+            this.message = message;
+        }
+        public string AnalyseMood()
+        {
+            if (this.message.Contains("sad"))
             {
                 return "Sad";
             }
