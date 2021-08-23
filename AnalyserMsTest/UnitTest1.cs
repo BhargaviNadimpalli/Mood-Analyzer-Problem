@@ -7,10 +7,10 @@ namespace AnalyserMsTest
     {
 
         [TestMethod]
-        public void GiveHappyMoodReturnHappy()
+        public void GiveSadMoodReturnSad()
         {
-            string expected = "Happy";
-            string message = "I am in happy mood";
+            string expected = "Sad";
+            string message = "I am in sad mood";
             MoodAnalyse analyse = new MoodAnalyse(message);
 
             string mood = analyse.AnalyseMood();
