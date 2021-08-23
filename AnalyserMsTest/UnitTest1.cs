@@ -7,9 +7,9 @@ namespace AnalyserMsTest
     {
         [TestMethod]
         [DataRow(null)]
-        public void GiveSadMoodReturnSad(string message)
+        public void GiveHappyMoodReturnhappy(string message)
         {
-            string expected = "sad";
+            string expected = "Happy";
             
             MoodAnalyse analyse = new MoodAnalyse(message);
 

@@ -26,7 +26,7 @@ namespace AnalyserMsTest
             }
             catch
             {
-                return "sad";
+                return "Happy";
             }
 
         }
