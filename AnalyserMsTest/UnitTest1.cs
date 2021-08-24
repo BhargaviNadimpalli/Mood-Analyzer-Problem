@@ -8,20 +8,19 @@ namespace AnalyserMsTest
       
         [TestMethod]
      
-       
-
-    public void GiveNullMood()
-    {
+        public void GiveEmptyMood()
+        {
         try
         {
-            string message = "Null";
+            string message = "";
             MoodAnalyse moodAnalyse = new MoodAnalyse(message);
             string mood = moodAnalyse.AnalyseMood();
         }
         catch (CustomAnalyse e)
         {
-            Assert.AreEqual("Mood should not be null", e.Message);
+            Assert.AreEqual("Mood should not be empty", e.Message);
         }
-    }
+        }
+   
 }
 }
