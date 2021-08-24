@@ -5,19 +5,36 @@ namespace AnalyserMsTest
     [TestClass]
     public class UnitTest1
     {
+      
         [TestMethod]
-        [DataRow(null)]
-        public void GiveHappyMoodReturnhappy(string message)
+     
+        public void GiveEmptyMood()
         {
-            string expected = "Happy";
-            
-            MoodAnalyse analyse = new MoodAnalyse(message);
+        try
+        {
+            string message = "";
+            MoodAnalyse moodAnalyse = new MoodAnalyse(message);
+            string mood = moodAnalyse.AnalyseMood();
+        }
+        catch (CustomAnalyse e)
+        {
+            Assert.AreEqual("Mood should not be empty", e.Message);
+        }
+        }
+    [TestMethod]
 
-            string mood = analyse.AnalyseMood();
-
-            Assert.AreEqual(expected, mood);
+    public void GiveNullMood()
+    {
+        try
+        {
+            string message = "";
+            MoodAnalyse moodAnalyse = new MoodAnalyse(message);
+            string mood = moodAnalyse.AnalyseMood();
+        }
+        catch (CustomAnalyse e)
+        {
+            Assert.AreEqual("Mood should not be null", e.Message);
         }
     }
-
-
+}
 }

@@ -15,20 +15,28 @@ namespace AnalyserMsTest
         {
             try
             {
+                if (this.message.Equals(string.Empty))
+                {
+                    throw new CustomAnalyse(CustomAnalyse.ExceptionType.EMPTY_MESSAGE, "Mood should not be empty");
+                }
                 if (this.message.Contains("sad"))
                 {
-                    return "sad";
+                    return "Sad";
                 }
                 else
                 {
                     return "Happy";
                 }
             }
-            catch
+            catch (NullReferenceException)
             {
-                return "Happy";
+                throw new CustomAnalyse(CustomAnalyse.ExceptionType.NULL_MESSAGE, "Mood should not be null");
             }
 
         }
     }
 }
+
+
+
+
