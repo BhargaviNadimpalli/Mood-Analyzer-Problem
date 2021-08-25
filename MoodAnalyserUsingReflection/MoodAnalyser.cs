@@ -8,28 +8,25 @@ namespace MoodAnalyserUsingReflection
 {
     public class MoodAnalyser
     {
-
-        public static object CreateMoodAnalyse(string className, string constructorName)
+        public static object CreateMoodAnalyseUsingParameters(string className, string constructorName, string message)
         {
-            string pattern = @"." + constructorName + "$";
-            Match result = Regex.Match(className, pattern);
-
-            if (result.Success)
+            Type type = typeof(Mood);
+            if (type.Name.Equals(className) || type.FullName.Equals(className))
             {
-                try
+                if (type.Name.Equals(constructorName))
                 {
-                    Assembly assembly = Assembly.GetExecutingAssembly();
-                    Type moodAnalyse = assembly.GetType(className);
-                    return Activator.CreateInstance(moodAnalyse);
+                    ConstructorInfo constructor = type.GetConstructor(new[] { typeof(string) });
+                    object instance = constructor.Invoke(new object[] { "Happy" });
+                    return instance;
                 }
-                catch (ArgumentException)
+                else
                 {
-                    throw new CustomAnalyse(CustomAnalyse.ExceptionType.NO_SUCH_CLASS, "Class not found");
+                    throw new CustomAnalyse(CustomAnalyse.ExceptionType.NO_SUCH_METHOD, "Constructor not found");
                 }
             }
             else
             {
-                throw new CustomAnalyse(CustomAnalyse.ExceptionType.NO_SUCH_METHOD, "Constructor not found");
+                throw new CustomAnalyse(CustomAnalyse.ExceptionType.NO_SUCH_CLASS, "Class not found");
             }
         }
     }

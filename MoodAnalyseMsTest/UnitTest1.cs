@@ -7,11 +7,11 @@ namespace MoodAnalyseMsTest
     public class UnitTest1
     {
         [TestMethod]
-        public void GiveClassNameAndReturnObject()
+        public void GiveClassNameAndReturnObjectUsingParameters()
         {
-            string message = null;
-            object expected = new Mood(message);
-            object obj = MoodAnalyser.CreateMoodAnalyse("MoodAnalyserUsingReflection.Mood", "Mood");
+            ///string message = null;
+            object expected = new Mood("Happy");
+            object obj = MoodAnalyser.CreateMoodAnalyseUsingParameters("MoodAnalyserUsingReflection.Mood", "Mood", "Happy");
             expected.Equals(obj);
            //Assert.Equals(expected, obj);
         }
