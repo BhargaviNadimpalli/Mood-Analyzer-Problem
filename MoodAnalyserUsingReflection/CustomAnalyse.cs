@@ -6,6 +6,7 @@ namespace MoodAnalyserUsingReflection
 {
     public class CustomAnalyse : Exception
     {
+       
         public enum ExceptionType
         {
             NULL_MESSAGE, EMPTY_MESSAGE,

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\Day20\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection.csproj": {
+    "C:\\Users\\HP\\source\\repos\\Day20\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Day20\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection.csproj",
         "projectName": "MoodAnalyserUsingReflection",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection.csproj",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\Day20\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\MoodAnalyserUsingReflection\\MoodAnalyserUsingReflection\\obj\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\Day20\\MoodAnalyserUsingReflection\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

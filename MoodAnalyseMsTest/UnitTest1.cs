@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MoodAnalyserUsingReflection;
+using System;
+using System.Reflection;
 
 namespace MoodAnalyseMsTest
 {
@@ -13,7 +15,34 @@ namespace MoodAnalyseMsTest
             object expected = new Mood("Happy");
             object obj = MoodAnalyser.CreateMoodAnalyseUsingParameters("MoodAnalyserUsingReflection.Mood", "Mood", "Happy");
             expected.Equals(obj);
-           //Assert.Equals(expected, obj);
+            //Assert.Equals(expected, obj);
+        }
+
+
+
+
+
+        [TestMethod]
+        ///[TestCategory("InvokeMethodReflection")]
+        public void GiveInvokeMethod()
+        {
+
+            string actual;
+            string message = "I am in a Happy mood";
+            string methodName = "AnalyseMood";
+            string expected = "Happy";
+
+
+            try
+            {
+                MoodAnalyser ma = new MoodAnalyser();
+                actual = ma.InvokeMethod(methodName, message);
+            }
+            catch (CustomAnalyse e)
+            {
+                throw new Exception(e.Message);
+            }
+            Assert.AreEqual(expected, actual);
         }
     }
 }
