@@ -1,0 +1,13 @@
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\bin\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.exe
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\bin\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.deps.json
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\bin\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.runtimeconfig.json
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\bin\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.runtimeconfig.dev.json
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\bin\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.dll
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\bin\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.pdb
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\obj\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\obj\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\obj\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.AssemblyInfo.cs
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\obj\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\obj\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.dll
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\obj\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.pdb
+C:\Users\HP\source\repos\MoodAnalyserUsingReflection\MoodAnalyserUsingReflection\obj\Debug\netcoreapp3.1\MoodAnalyserUsingReflection.genruntimeconfig.cache
